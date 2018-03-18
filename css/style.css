@@ -239,7 +239,7 @@ blockquote span,
 	top:0;
 	height: 100%;
 	width: 100%;
-	transition: all .2s;
+	transition: all .2s linear;
 	background-color: #000000;
 }
 .team-wrapper .team-item-img:hover .team-item-skills {
@@ -259,4 +259,37 @@ blockquote span,
 	margin-top: 85px;
 }
 /* ----- Why choose us end ----- */
+/* ----- Latest news start ----- */
+.latest-news .title a {
+	float: right;
+	font-size: 11px;
+	color: #999;
+	letter-spacing: .4em;
+}
+.news-item-img {
+	margin-bottom: 30px;
+	filter: grayscale(100%);
+	transition: all .2s linear;
+}
+.news-item-img:hover {
+	filter: grayscale(0%);
+}
+.news-item-title {
+	margin-bottom: 18px;
+	letter-spacing: .2em;
+	text-transform: uppercase;
+	font-family: 'Dosis';
+	font-weight: 400;
+}
+.news-item-author {
+	font-size: 11px;
+	letter-spacing: .4em;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+	color: #999999;
+}
+.news-item-text {
+	margin-bottom: 30px;
+}
+/* ----- Latest news end ----- */
 /* ===== Custom style end ===== */
