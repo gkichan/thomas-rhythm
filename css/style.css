@@ -127,6 +127,7 @@ blockquote span,
 	font-size: 12px;
 	text-transform: uppercase;
 	font-weight: 400;
+	letter-spacing: .2em;
 }
 
 .btn.btn-default {
@@ -207,12 +208,15 @@ blockquote span,
 }
 /* ----- Inner end ----- */
 /* ----- About studio start ----- */
+.about-studio {
+	border-bottom: 1px solid #ececec;
+}
 .about-studio blockquote span {
-	padding-top: 35px;
+	margin-top: 35px;
 	display: block;
 }
-.about-studio .row {
-	padding-bottom: 110px;
+.about-studio .row + .row{
+	margin-top: 110px;
 }
 .team-wrapper {
 	width: 100%;
@@ -224,10 +228,10 @@ blockquote span,
 }
 .team-item-name {
 	font-size: 15px;
-	padding-top: 30px;
+	margin-top: 30px;
 }
 .team-item-role {
-	padding-top: 20px;
+	margin-top: 20px;
 	font-size: 12px;
 }
 .team-item-img {
@@ -251,7 +255,7 @@ blockquote span,
 	font-size: 48px;
 }
 .why-item-title {
-	padding: 35px 0;
+	margin: 35px 0;
 	font-size: 15px;
 	letter-spacing: .4em;
 }
@@ -289,7 +293,7 @@ blockquote span,
 	color: #999999;
 }
 .news-item-text {
-	margin-bottom: 30px;
-}
+	 margin-bottom: 30px;
+ }
 /* ----- Latest news end ----- */
 /* ===== Custom style end ===== */
