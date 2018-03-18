@@ -246,4 +246,17 @@ blockquote span,
 	opacity: 1;
 }
 /* ----- About studio end ----- */
+/* ----- Why choose us start ----- */
+.why-item .why-item-icon {
+	font-size: 48px;
+}
+.why-item-title {
+	padding: 35px 0;
+	font-size: 15px;
+	letter-spacing: .4em;
+}
+.why-choose-us .row + .row {
+	margin-top: 85px;
+}
+/* ----- Why choose us end ----- */
 /* ===== Custom style end ===== */
