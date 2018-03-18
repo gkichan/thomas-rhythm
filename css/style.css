@@ -175,6 +175,7 @@ blockquote span,
 }
 /* ===== Default component end ===== */
 /* ===== Custom style start ===== */
+/* ----- Inner start ----- */
 .inner {
 	height: 100vh;
 	background: url("../img/inner-bg.jpg") no-repeat center / cover;
@@ -204,4 +205,45 @@ blockquote span,
 	color: rgba(254,254,254,.21);
 	font-size: 19px;
 }
+/* ----- Inner end ----- */
+/* ----- About studio start ----- */
+.about-studio blockquote span {
+	padding-top: 35px;
+	display: block;
+}
+.about-studio .row {
+	padding-bottom: 110px;
+}
+.team-wrapper {
+	width: 100%;
+	overflow: hidden;
+}
+.team-item {
+	text-transform: uppercase;
+	letter-spacing: .4em;
+}
+.team-item-name {
+	font-size: 15px;
+	padding-top: 30px;
+}
+.team-item-role {
+	padding-top: 20px;
+	font-size: 12px;
+}
+.team-item-img {
+	position: relative;
+}
+.team-item-skills {
+	opacity: 0;
+	position: absolute;
+	top:0;
+	height: 100%;
+	width: 100%;
+	transition: all .2s;
+	background-color: #000000;
+}
+.team-wrapper .team-item-img:hover .team-item-skills {
+	opacity: 1;
+}
+/* ----- About studio end ----- */
 /* ===== Custom style end ===== */
