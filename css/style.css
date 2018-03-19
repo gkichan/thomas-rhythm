@@ -261,6 +261,7 @@ blockquote span,
 	float: left;
 	width: 20%;
 	margin-bottom: 80px;
+	font-family: 'Dosis';
 }
 .services .tabs-nav li span {
 	display: block;
@@ -270,6 +271,9 @@ blockquote span,
 	margin-top: 35px;
 	letter-spacing: .4em;
 	text-transform: uppercase;
+}
+.services .tabs-nav li a {
+	color: rgba(0, 0, 0, .5);
 }
 .services .tabs-nav li a:focus {
 	color: #000;
@@ -287,6 +291,47 @@ blockquote span,
 	margin-top: -32px;
 }
 /* ----- Lets talk end ----- */
+/* ----- Portfolio start ----- */
+.portfolio .title {
+	margin-top: 140px;
+}
+.portfolio p {
+	max-width: 750px;
+	margin: auto;
+}
+.portfolio .tabs-nav {
+	overflow: hidden;
+	padding: 85px 0 50px 0;
+}
+.portfolio .tabs-nav li {
+	display: inline-block;
+	font-family: 'Dosis';
+	letter-spacing: .4em;
+	text-transform: uppercase;
+}
+.portfolio .tabs-nav li + li {
+	margin-left: 65px;
+}
+.portfolio .tabs-nav a {
+	color: rgba(0, 0, 0, .5);
+}
+.portfolio .tabs-nav a:focus {
+	color: #000;
+}
+.portfolio .portfolio-item {
+	width: 33.3333%;
+	float:left;
+	padding: 4px;
+}
+.portfolio .portfolio-item img {
+	width: 100%;
+	filter: grayscale(100%);
+	transition: all .2s linear;
+}
+.portfolio .portfolio-item img:hover {
+	filter: grayscale(0%);
+}
+/* ----- Portfolio end ----- */
 /* ----- Why choose us start ----- */
 .why-item-title {
 	margin: 35px 0;
