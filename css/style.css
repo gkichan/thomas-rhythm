@@ -2,6 +2,9 @@
 *{
 	box-sizing: border-box;
 }
+*:focus {
+	outline: none;
+}
 body{
 	margin: 0;
 	background-color: #fff;
@@ -174,6 +177,9 @@ blockquote span,
 .header .header-nav li + li {
 	margin-left: 35px;
 }
+.icon {
+	font-size: 48px;
+}
 /* ===== Default component end ===== */
 /* ===== Custom style start ===== */
 /* ----- Inner start ----- */
@@ -251,9 +257,6 @@ blockquote span,
 }
 /* ----- About studio end ----- */
 /* ----- Why choose us start ----- */
-.why-item .why-item-icon {
-	font-size: 48px;
-}
 .why-item-title {
 	margin: 35px 0;
 	font-size: 15px;
@@ -296,4 +299,23 @@ blockquote span,
 	 margin-bottom: 30px;
  }
 /* ----- Latest news end ----- */
+/* ----- Services start ----- */
+.services .tabs-nav li {
+	float: left;
+	width: 20%;
+	margin-bottom: 80px;
+}
+.services .tabs-nav li span {
+	display: block;
+}
+.services .tabs-nav li span + span {
+	font-size: 14px;
+	margin-top: 35px;
+	letter-spacing: .4em;
+	text-transform: uppercase;
+}
+.services .tabs-nav li a:focus {
+	color: #000;
+}
+/* ----- Services end ----- */
 /* ===== Custom style end ===== */
