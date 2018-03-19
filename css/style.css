@@ -256,6 +256,37 @@ blockquote span,
 	opacity: 1;
 }
 /* ----- About studio end ----- */
+/* ----- Services start ----- */
+.services .tabs-nav li {
+	float: left;
+	width: 20%;
+	margin-bottom: 80px;
+}
+.services .tabs-nav li span {
+	display: block;
+}
+.services .tabs-nav li span + span {
+	font-size: 14px;
+	margin-top: 35px;
+	letter-spacing: .4em;
+	text-transform: uppercase;
+}
+.services .tabs-nav li a:focus {
+	color: #000;
+}
+/* ----- Services end ----- */
+/* ----- Lets talk start ----- */
+.lets-talk .lets-talk-content {
+	padding: 140px 0;
+}
+.lets-talk p {
+	color: rgba(255,255,255,.7);
+	margin-bottom: 35px;
+}
+.lets-talk img {
+	margin-top: -32px;
+}
+/* ----- Lets talk end ----- */
 /* ----- Why choose us start ----- */
 .why-item-title {
 	margin: 35px 0;
@@ -299,23 +330,5 @@ blockquote span,
 	 margin-bottom: 30px;
  }
 /* ----- Latest news end ----- */
-/* ----- Services start ----- */
-.services .tabs-nav li {
-	float: left;
-	width: 20%;
-	margin-bottom: 80px;
-}
-.services .tabs-nav li span {
-	display: block;
-}
-.services .tabs-nav li span + span {
-	font-size: 14px;
-	margin-top: 35px;
-	letter-spacing: .4em;
-	text-transform: uppercase;
-}
-.services .tabs-nav li a:focus {
-	color: #000;
-}
-/* ----- Services end ----- */
+
 /* ===== Custom style end ===== */
