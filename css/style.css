@@ -299,6 +299,9 @@ blockquote span,
 	max-width: 750px;
 	margin: auto;
 }
+.portfolio .tabs-wrapper {
+	overflow: hidden;
+}
 .portfolio .tabs-nav {
 	overflow: hidden;
 	padding: 85px 0 50px 0;
@@ -332,6 +335,11 @@ blockquote span,
 	filter: grayscale(0%);
 }
 /* ----- Portfolio end ----- */
+/* ----- Start project start ----- */
+.start-project {
+	padding: 70px 0;
+}
+/* ----- Start project end ----- */
 /* ----- Why choose us start ----- */
 .why-item-title {
 	margin: 35px 0;
