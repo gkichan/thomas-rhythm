@@ -33,10 +33,20 @@ ul, ol{
 img {
 	max-width: 100%;
 }
+input,
+textarea,
 button {
-	outline: none;
-	border: none;
+  outline: none;
+  border: none;
+}
+button {
 	cursor: pointer;
+}
+textarea {
+  resize: vertical;
+}
+input[type="submit"] {
+  cursor: pointer;
 }
 blockquote {
 	margin: 0;
@@ -132,7 +142,10 @@ blockquote span,
 	font-weight: 400;
 	letter-spacing: .2em;
 }
-
+.btn[disabled] {
+  cursor: not-allowed;
+  opacity:  .6;
+}
 .btn.btn-default {
 	background-color: #e5e5e5;
 	color: #777;
@@ -154,6 +167,43 @@ blockquote span,
 .btn.btn-xs {
 	padding: 7px 15px;
 	font-size: 11px;
+}
+.form-control {
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  border-radius:2px;
+  height: 36px;
+  font-size: 12px;
+  font-family: 'Open Sans';
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #777;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+.form-control:focus {
+  border-color: #111;
+}
+textarea.form-control {
+  min-height: 82px;
+  padding-top: 10px;
+}
+.form-control[disabled],
+.form-control.disabled {
+  cursor:not-allowed;
+  opacity: .6;
+}
+.form-control.error {
+  border-color: #f57e7e;
+}
+.form-info {
+  font-size: 11px;
+  color: #aaa;
+  font-weight: 400;
+}
+.form-info .fa {
+  font-size: 12px;
 }
 .header {
 	width: 100%;
@@ -181,6 +231,11 @@ blockquote span,
 	font-size: 48px;
 }
 /* ===== Default component end ===== */
+/* ===== Guide styles start ===== */
+.guide-section form .form-control {
+  margin-bottom: 10px;
+}
+/* ===== Guide styles end ===== */
 /* ===== Custom style start ===== */
 /* ----- Inner start ----- */
 .inner {
@@ -383,5 +438,13 @@ blockquote span,
 	 margin-bottom: 30px;
  }
 /* ----- Latest news end ----- */
+/* ----- Subscribe start ----- */
+.subscribe form .form-control {
+  max-width: 290px;
+}
+.subscribe .form-info {
+  margin-top: 17px;
+}
+/* ----- Subscribe end ----- */
 
 /* ===== Custom style end ===== */
