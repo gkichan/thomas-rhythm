@@ -73,6 +73,10 @@ blockquote {
 .bg-grey {
 	background-color: #f8f8f8;
 }
+.m-auto {
+  float: none;
+  margin:auto;
+}
 /* ===== Default classes end ===== */
 /* ===== Default component start ===== */
 
@@ -133,7 +137,6 @@ blockquote span,
 	text-transform: uppercase;
 	letter-spacing: .2em;
 }
-
 .btn {
 	display: inline-block;
 	padding: 12px 20px;
@@ -237,7 +240,64 @@ textarea.form-control {
 .icon {
 	font-size: 48px;
 }
-/* ===== Default component end ===== */
+.rhomb-icon {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  text-align: center;
+  line-height: 23px;
+  border-radius: 2px;
+  font-size: 14px;
+  transform: rotate(45deg);
+}
+.rhomb-icon i {
+  transform: rotate(-45deg);
+}
+.rhomb-icon.black-icon {
+  color: #fff;
+  background-color: #111;
+}
+.rhomb-icon.white-icon {
+  color: #111;
+  background-color: #fff;
+}
+.rhomb-icon.transparent-icon {
+  border: 1px solid #111;
+  color: #111;
+  background-color: transparent;
+}
+.footer {
+  padding-top: 140px;
+  padding-bottom: 60px;
+}
+.footer .footer-nav {
+  margin-top: 25px;
+}
+.footer .footer-nav li{
+  display: inline-block;
+}
+.footer .footer-nav li + li {
+  margin-left: 15px;
+}
+.footer .copyright {
+  margin-top: 110px;
+}
+.footer .copyright span {
+  display: block;
+  line-height: 2;
+}
+.footer .copyright .copyright-name {
+  text-transform: uppercase;
+  font-family: 'Dosis';
+  font-size: 12px;
+  color: #111;
+  letter-spacing: .5em;
+}
+.footer .copyright .copyright-text {
+  color: #999;
+  font-size: 11px;
+}
+  /* ===== Default component end ===== */
 /* ===== Guide styles start ===== */
 .guide-section form .form-control {
   margin-bottom: 10px;
@@ -550,5 +610,24 @@ textarea.form-control {
   margin-top: 17px;
 }
 /* ----- Subscribe end ----- */
-
+/* ----- Contact start ----- */
+.contact-item .contact-item-content {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+.contact-item .contact-item-content span {
+  display: block;
+}
+.contact-item .contact-item-content .contact-title {
+  text-transform: uppercase;
+  font-family: 'Dosis';
+  font-size: 12px;
+  letter-spacing: .3em;
+}
+.contact-item .contact-item-content .contact-data {
+  font-size: 15px;
+  line-height: 1.6;
+}
+/* ----- Contact end ----- */
 /* ===== Custom style end ===== */
