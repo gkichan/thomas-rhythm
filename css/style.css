@@ -41,6 +41,7 @@ button {
 }
 button {
 	cursor: pointer;
+  padding: 0;
 }
 textarea {
   resize: vertical;
@@ -356,6 +357,9 @@ textarea.form-control {
 }
 /* ----- Lets talk end ----- */
 /* ----- Portfolio start ----- */
+.portfolio {
+  overflow: hidden;
+}
 .portfolio .title {
 	margin-top: 140px;
 }
@@ -413,6 +417,98 @@ textarea.form-control {
 	margin-top: 85px;
 }
 /* ----- Why choose us end ----- */
+/* ----- Review carousel start ----- */
+.reviews-carousel {
+  padding: 135px 0;
+  overflow: hidden;
+}
+.reviews-carousel .slide-content .icon {
+  font-size: 32px;
+  color: #fff;
+}
+.reviews-carousel .slide-content .title {
+  margin-top: 20px;
+}
+.reviews-carousel .slide-content p {
+  color: rgba(255,255,255,.75);
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 675px;
+  margin: auto;
+}
+.reviews-carousel .slide-content .review-author {
+  color: rgba(255,255,255,.3);
+  font-size: 11px;
+  letter-spacing: .2em;
+  line-height: 3.45;
+}
+.reviews-carousel .slick-dots {
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
+  text-align: center;
+}
+.reviews-carousel .slick-dots li {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  background-color: rgba(255,255,255,.8);
+  border-radius: 50%;
+  border: 1px solid #111;
+  cursor: pointer;
+}
+.reviews-carousel .slick-dots li.slick-active {
+  background-color: #111;
+  border-color: rgba(255,255,255,.8);
+}
+.reviews-carousel .slick-dots li button {
+  display: none;
+}
+.reviews-carousel .slick-dots li + li {
+   margin-left: 5px;
+ }
+.reviews-carousel .slick-arrow {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 1;
+  width: 90px;
+  cursor: pointer;
+}
+.reviews-carousel .slick-arrow.slick-prev {
+  left: 0;
+}
+.reviews-carousel .slick-arrow.slick-next {
+  right: 0;
+}
+.reviews-carousel .slick-arrow.slick-next .carousel-button {
+  right: 0;
+  margin-right: -31px;
+}
+.reviews-carousel .slick-arrow .carousel-button {
+  position: absolute;
+  top:50%;
+  width: 63px;
+  height: 63px;
+  background: #fff;
+  transform: rotate(-45deg);
+  margin-left: -31px;
+  margin-top: -31px;
+}
+.reviews-carousel .slick-arrow .carousel-button .fa {
+  transform: rotate(45deg);
+  font-size: 10px;
+  position: absolute;
+}
+.reviews-carousel .slick-arrow.slick-prev .carousel-button .fa {
+  right: 17px;
+  bottom: 14px;
+}
+.reviews-carousel .slick-arrow.slick-next .carousel-button .fa {
+  top: 17px;
+  left: 14px;
+}
+/* ----- Review carousel end ----- */
 /* ----- Latest news start ----- */
 .latest-news .title a {
 	float: right;
