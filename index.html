@@ -42,7 +42,7 @@
       <!-- MAIN START -->
         <div class="main">
           <div class="inner text-center">
-            <div class="inner-content text-center">
+            <div class="inner-content">
               <h1>Thomas Rhythm</h1>
               <span>Extraordinary art director & creative minimalism lover</span>
             </div>
@@ -710,7 +710,20 @@
                   </div>
                   <!-- / contact-items-wrapper -->
                   <form class="contact-form">
-
+                    <div class="form-col">
+                      <input type="text" name="user-name" id="user-name" class="form-control" placeholder="Name">
+                      <input type="text" name="user-email" id="user-email" class="form-control" placeholder="Email">
+                    </div>
+                    <!-- / form-col -->
+                    <div class="form-col">
+                      <textarea name="user-message" id="user-message" class="form-control" placeholder="Message"></textarea>
+                    </div>
+                    <!-- / form-col -->
+                    <div class="form-info pull-left">
+                      <span><i class="fa fa-info-circle"></i> All the fields are required</span>
+                    </div>
+                    <!-- / form-info -->
+                    <button class="btn btn-black pull-right">Submit message</button>
                   </form>
                   <!-- / contact-form -->
                 </div>
@@ -720,6 +733,17 @@
             <!-- / container -->
           </div>
           <!-- / contact -->
+          <div class="map-container">
+            <div id="map">
+
+            </div>
+            <div class="on-map-block">
+              <div class="on-map-content">
+                <span class="rhomb-icon white-icon"><i class="fa fa-map-marker"></i></span>
+                <span>Open the map <i class="fa fa-angle-down"></i></span>
+              </div>
+            </div>
+          </div>
         </div>
       <!-- MAIN END -->
       <!-- FOOTER START -->
@@ -752,6 +776,10 @@
       <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
       <!-- jQuery UI -->
       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <!-- Google map API -->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBc4JVJopUirdOh56KGfX2NOMjklUNUQ6U&callback=initMap" async defer></script>
+      <!-- Init Google map -->
+      <script src="js/google-maps.js"></script>
       <!-- Plugins -->
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
       <!-- Init plugins -->
