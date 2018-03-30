@@ -217,7 +217,7 @@ textarea.form-control {
 }
 .header {
 	width: 100%;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	padding: 35px 0px;
@@ -303,6 +303,14 @@ textarea.form-control {
   color: #999;
   font-size: 11px;
 }
+.arrow-up {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	font-size: 50px;
+	color: #c6c6c6;
+	cursor: pointer;
+}
 /* ===== Default component end ===== */
 /* ===== Guide styles start ===== */
 .guide-section form .form-control {
@@ -315,6 +323,7 @@ textarea.form-control {
 	height: 100vh;
 	background: url("../img/inner-bg.jpg") no-repeat center / cover;
 	padding-top:93px;
+	position: relative;
 }
 .inner::before {
 	content: '';
@@ -339,6 +348,18 @@ textarea.form-control {
 .inner span {
 	color: rgba(254,254,254,.21);
 	font-size: 19px;
+}
+.inner .rhomb-icon {
+	display: block;
+	bottom: 40px;
+	position: absolute;
+	cursor: pointer;
+	margin-left: 49%;
+}
+.inner .rhomb-icon i {
+	top: 7px;
+	right: 1px;
+	position: absolute;
 }
 /* ----- Inner end ----- */
 /* ----- About studio start ----- */
@@ -372,7 +393,7 @@ textarea.form-control {
 .team-item-img {
 	position: relative;
 }
-.team-item-skills {
+.team-item .team-item-skills {
 	opacity: 0;
 	position: absolute;
 	top:0;
@@ -380,9 +401,68 @@ textarea.form-control {
 	width: 100%;
 	transition: all .2s linear;
 	background-color: #000000;
+	padding: 40px;
 }
 .team-wrapper .team-item-img:hover .team-item-skills {
 	opacity: 1;
+}
+.skill-item span {
+	font-size: 11px;
+	line-height: 3.45;
+	letter-spacing: .2em;
+	color: rgba(255,255,255,.9);
+	font-family: 'Open Sans';
+}
+.team-item-skills .skills-title {
+	font-size: 18px;
+	color: #fff;
+	letter-spacing: .3em;
+	line-height: 2.1;
+}
+.team-item-skills .skills-text {
+	font-family: 'Open Sans';
+	font-size: 13px;
+	text-transform: none;
+	letter-spacing: normal;
+	color: rgba(255,255,255,.5);
+	line-height: 1.6;
+	margin-bottom: 40px;
+}
+.progress-wrapp {
+	width: 100%;
+	height: 12px;
+	background-color: rgba(255,255,255,.15);
+	overflow: hidden;
+}
+.progress-wrapp .progress {
+	height: 12px;
+	width: 0%;
+	background-color: rgba(255,255,255,.75);
+	transition: width .5s ease-out;
+}
+.progress-wrapp .progress.branding {
+	transition: width .5s ease-out;
+}
+.progress-wrapp .progress.design {
+	transition: width .5s ease-out .2s;
+}
+.progress-wrapp .progress.development {
+	transition: width .5s ease-out .4s;
+}
+.progress-wrapp .progress.photography {
+	transition: width .5s ease-out .6s;
+}
+.team-item-img:hover .progress.branding {
+	width: 80%;
+}
+.team-item-img:hover .progress.design {
+	 width: 60%;
+ }
+.team-item-img:hover .progress.development {
+	width: 70%;
+}
+.team-item-img:hover .progress.photography {
+	width: 90%;
 }
 /* ----- About studio end ----- */
 /* ----- Services start ----- */
