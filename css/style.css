@@ -354,7 +354,8 @@ textarea.form-control {
 	bottom: 40px;
 	position: absolute;
 	cursor: pointer;
-	margin-left: 49%;
+	left: 50%;
+	margin-left: -16px;
 }
 .inner .rhomb-icon i {
 	top: 7px;
