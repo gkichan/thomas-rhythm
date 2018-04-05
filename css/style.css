@@ -400,7 +400,16 @@ textarea.form-control {
   }
 }
 @media (max-width: 576px) {
-
+  .inner h1 {
+    font-size: 22px;
+    letter-spacing: .5em;
+  }
+  .inner span {
+    font-size: 12px;
+  }
+  .inner .rhomb-icon i {
+    top: 12px;
+  }
 }
 /* ----- Inner end ----- */
 /* ----- About studio start ----- */
@@ -569,18 +578,18 @@ textarea.form-control {
 	}
 }
 @media (max-width: 767px) {
-  .tabs-wrapper .tabs-nav .row + .row {
-    margin-top: 20px;
-  }
-  .services .tabs-nav li.col-sm-4 {
-    width: 33.333333%;
-  }
-  .services .tabs-nav li.col-sm-6 {
-    width: 50%;
+  .services .tabs-nav li {
+		width: 33.333333%;
+		margin-bottom: 20px;
   }
   .tabs-wrapper .row .col-sm-12:last-child .default-text {
     margin-top: 20px;
   }
+}
+@media (max-width: 479px) {
+	.services .tabs-nav li {
+		width: 50%;
+	}
 }
 /* ----- Services end ----- */
 /* ----- Lets talk start ----- */
@@ -666,6 +675,15 @@ textarea.form-control {
   .portfolio .portfolio-item {
     width: 100%;
   }
+}
+@media (max-width: 479px) {
+	.portfolio .tabs-nav li {
+		margin-bottom: 20px;
+		width: 100%;
+	}
+	.portfolio .tabs-nav li + li {
+		margin-left: 0;
+	}
 }
 /* ----- Portfolio end ----- */
 /* ----- Why choose us start ----- */
@@ -785,6 +803,16 @@ textarea.form-control {
     padding: 70px 0;
   }
 }
+@media (max-width: 576px) {
+	.reviews-carousel .slide-content p {
+		max-width: 350px;
+	}
+}
+@media (max-width: 479px) {
+	.reviews-carousel .slide-content p {
+		max-width: 200px;
+	}
+}
 /* ----- Review carousel end ----- */
 /* ----- Latest news start ----- */
 .latest-news .title a {
@@ -828,6 +856,13 @@ textarea.form-control {
 		border-top: 2px solid #000;
 	}
 }
+@media (max-width: 479px) {
+	.latest-news .title a {
+		margin-top: 20px;
+		display: block;
+		float: none;
+	}
+}
 /* ----- Latest news end ----- */
 /* ----- Subscribe start ----- */
 .subscribe form .form-control {
@@ -835,6 +870,14 @@ textarea.form-control {
 }
 .subscribe .form-info {
   margin-top: 17px;
+}
+@media (max-width: 479px) {
+	.subscribe .title span {
+		font-size: 16px;
+	}
+	.subscribe button {
+		margin-top: 20px;
+	}
 }
 /* ----- Subscribe end ----- */
 /* ----- Contact start ----- */
@@ -887,6 +930,9 @@ textarea.form-control {
     margin-top: 20px;
   }
   .contact-form .form-col {
+    width: 100%;
+  }
+  .contact-form button {
     width: 100%;
   }
 }
