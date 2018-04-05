@@ -143,6 +143,11 @@ blockquote span,
 	text-transform: uppercase;
 	letter-spacing: .2em;
 }
+@media (max-width: 991px) {
+	blockquote {
+		margin-bottom: 40px;
+	}
+}
 .btn {
 	display: inline-block;
 	padding: 12px 20px;
@@ -221,7 +226,7 @@ textarea.form-control {
 	top: 0;
 	left: 0;
 	padding: 35px 0px;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	z-index:999;
 }
 .header .logo {
@@ -239,6 +244,17 @@ textarea.form-control {
 }
 .header .header-nav li + li {
 	margin-left: 35px;
+}
+.slicknav_menu {
+	display: none;
+}
+@media (max-width: 767px) {
+	.slicknav_menu {
+		display: block;
+	}
+	.header-nav {
+		display: none;
+	}
 }
 .tabs-nav {
 	overflow: hidden;
@@ -362,6 +378,30 @@ textarea.form-control {
 	right: 1px;
 	position: absolute;
 }
+@media (max-width: 991px) {
+	.inner h1 {
+		letter-spacing: .7em;
+		margin-bottom: 55px;
+	}
+}
+@media (max-width: 767px) {
+  .inner {
+    height: auto;
+    padding: 150px 0;
+  }
+  .inner h1 {
+    font-size: 26px;
+  }
+  .inner span {
+    font-size: 16px;
+  }
+  .inner .rhomb-icon i {
+    top: 9px;
+  }
+}
+@media (max-width: 576px) {
+
+}
 /* ----- Inner end ----- */
 /* ----- About studio start ----- */
 .about-studio {
@@ -383,11 +423,11 @@ textarea.form-control {
 	letter-spacing: .4em;
 	font-family: 'Dosis';
 }
-.team-item-name {
+.team-item .team-item-name {
 	font-size: 15px;
 	margin-top: 30px;
 }
-.team-item-role {
+.team-item .team-item-role {
 	margin-top: 20px;
 	font-size: 12px;
 }
@@ -406,6 +446,7 @@ textarea.form-control {
 }
 .team-wrapper .team-item-img:hover .team-item-skills {
 	opacity: 1;
+	overflow: hidden;
 }
 .skill-item span {
 	font-size: 11px;
@@ -465,6 +506,35 @@ textarea.form-control {
 .team-item-img:hover .progress.photography {
 	width: 90%;
 }
+
+@media (max-width: 991px) {
+	.team-item .team-item-name {
+		font-size: 12px;
+	}
+	.team-item .team-item-role {
+		font-size: 9px;
+	}
+	.team-item .team-item-skills {
+		padding: 20px;
+	}
+	.team-item-skills .skills-text {
+		margin-bottom: 15px;
+	}
+}
+@media (max-width: 767px) {
+  .about-studio .row .col:last-child .default-text {
+    margin-top: 20px;
+  }
+  .team-wrapper .row .col + .col {
+    margin-top: 30px;
+  }
+  .team-item-img {
+    text-align: center;
+  }
+  .team-item-skills {
+    text-align: left;
+  }
+}
 /* ----- About studio end ----- */
 /* ----- Services start ----- */
 .services .tabs-nav {
@@ -490,6 +560,28 @@ textarea.form-control {
 .services .tabs-nav li.ui-state-active {
 	color: #000;
 }
+@media (max-width: 991px) {
+	.services .tabs-nav li span + span {
+		font-size: 11px;
+	}
+	.services .tabs-nav {
+		margin-bottom: 40px;
+	}
+}
+@media (max-width: 767px) {
+  .tabs-wrapper .tabs-nav .row + .row {
+    margin-top: 20px;
+  }
+  .services .tabs-nav li.col-sm-4 {
+    width: 33.333333%;
+  }
+  .services .tabs-nav li.col-sm-6 {
+    width: 50%;
+  }
+  .tabs-wrapper .row .col-sm-12:last-child .default-text {
+    margin-top: 20px;
+  }
+}
 /* ----- Services end ----- */
 /* ----- Lets talk start ----- */
 .lets-talk .lets-talk-content {
@@ -501,6 +593,12 @@ textarea.form-control {
 }
 .lets-talk img {
 	margin-top: -32px;
+}
+@media (max-width: 991px) {
+	.lets-talk .lets-talk-content {
+		text-align: center;
+		padding: 70px 0;
+	}
 }
 /* ----- Lets talk end ----- */
 /* ----- Portfolio start ----- */
@@ -553,6 +651,22 @@ textarea.form-control {
 .portfolio .portfolio-item img:hover {
 	filter: grayscale(0%);
 }
+@media (max-width: 991px) {
+	.portfolio .portfolio-item {
+		width: 50%;
+	}
+}
+@media (max-width: 767px) {
+  .portfolio .tabs-nav {
+    padding: 50px 0 40px 0;
+  }
+  .portfolio .tabs-nav li + li {
+    margin-left: 30px;
+  }
+  .portfolio .portfolio-item {
+    width: 100%;
+  }
+}
 /* ----- Portfolio end ----- */
 /* ----- Why choose us start ----- */
 .why-item-title {
@@ -562,6 +676,14 @@ textarea.form-control {
 }
 .why-choose-us .row + .row {
 	margin-top: 85px;
+}
+@media (max-width: 991px) {
+	.why-item {
+		margin-bottom: 30px;
+	}
+	.why-choose-us .row + .row {
+		margin-top: 0;
+	}
 }
 /* ----- Why choose us end ----- */
 /* ----- Review carousel start ----- */
@@ -655,6 +777,14 @@ textarea.form-control {
   top: 17px;
   left: 14px;
 }
+@media (max-width: 767px) {
+  .reviews-carousel .slide-content p {
+    max-width: 450px;
+  }
+  .reviews-carousel {
+    padding: 70px 0;
+  }
+}
 /* ----- Review carousel end ----- */
 /* ----- Latest news start ----- */
 .latest-news .title a {
@@ -688,6 +818,16 @@ textarea.form-control {
 .news-item-text {
 	 margin-bottom: 30px;
  }
+@media (max-width: 991px) {
+	.news-item-img img {
+		width: 100%;
+	}
+	.latest-news .row .col + .col {
+		margin-top: 30px;
+		padding-top: 30px;
+		border-top: 2px solid #000;
+	}
+}
 /* ----- Latest news end ----- */
 /* ----- Subscribe start ----- */
 .subscribe form .form-control {
@@ -720,8 +860,10 @@ textarea.form-control {
 	margin-bottom: 80px;
 }
 .contact-form {
-	overflow: hidden;
-	margin: 0 -5px;
+  overflow: hidden;
+}
+.contact-form .form-row {
+  margin: 0 -5px;
 }
 .contact-form .form-col {
 	width: 50%;
@@ -736,10 +878,17 @@ textarea.form-control {
 }
 .contact-form .form-info {
 	line-height: 37.6px;
-	margin-left: 5px;
 }
-.contact-form button {
-	margin-right: 5px;
+.contact-item .contact-data {
+  color: #444;
+}
+@media (max-width: 767px) {
+  .contact-items-wrapper .col + .col{
+    margin-top: 20px;
+  }
+  .contact-form .form-col {
+    width: 100%;
+  }
 }
 /* ----- Contact end ----- */
 /* ----- Google map start ----- */
